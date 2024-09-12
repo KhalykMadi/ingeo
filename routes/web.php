@@ -14,6 +14,6 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/{any}', function () {
-    return view('welcome');  // Шаблон с Vue
+    return view('app');  // Шаблон с Vue
 })->where('any', '.*');  // Позволяет Vue управлять маршрутизацией
 

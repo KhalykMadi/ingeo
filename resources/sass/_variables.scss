@@ -1,7 +1,75 @@
-// Body
-$body-bg: #f8fafc;
+:root {
+    --primary: #1F87F0;
+    --white: #fff;
+}
 
-// Typography
-$font-family-sans-serif: 'Nunito', sans-serif;
-$font-size-base: 0.9rem;
-$line-height-base: 1.6;
+* {
+    font-family: 'PT Sans';
+    margin: 0;
+}
+
+.icon {
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &-search {
+        background-image: url("/images/icon/icon-search.svg");
+    }
+    &-filter {
+        background-image: url("/images/icon/icon-filter.svg");
+    }
+    &-rivers {
+        width: 64px;
+        height: 64px;
+        background-image: url("/images/icon/icon-rivers.svg");
+    }
+    &-lakes {
+        width: 64px;
+        height: 64px;
+        background-image: url("/images/icon/icon-lakes.svg");
+    }
+    &-reservoirs {
+        width: 64px;
+        height: 64px;
+        background-image: url("/images/icon/icon-reservoirs.svg");
+    }
+    &-canals {
+        width: 64px;
+        height: 64px;
+        background-image: url("/images/icon/icon-canals.svg");
+    }
+}
+
+.button {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 0;
+    background-color: transparent;
+    margin: 0;
+    padding: 0;
+}
+
+.text {
+    &-sm {
+        font-size: 0.875rem;
+    }
+    &-base {
+        font-size: 1rem;
+    }
+    &-lg {
+        font-size: 1.125rem;
+    }
+    &-xl {
+        font-size: 1.25rem;
+    }
+    &-regular {
+        font-weight: 400;
+    }
+    &-bold {
+        font-weight: 700;
+    }
+}
