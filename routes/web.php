@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Admin\MainController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,7 +14,11 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/{any}', function () {
-    return view('welcome');  // Шаблон с Vue
-})->where('any', '.*');  // Позволяет Vue управлять маршрутизацией
+Route::get('/', function () {
+    return view('welcome');
+})->where('any', '.*');
 
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
