@@ -15,13 +15,13 @@ use Illuminate\Support\Facades\Route;
 */
 
 
-Route::get('/', function () {
-    return view('welcome');
-})->where('any', '.*');
+//Route::get('/', function () {
+//    return view('welcome');
+//})->where('any', '.*');
 
-//Route::get('/{any}', function () {
-//    return view('app');  // Шаблон с Vue
-//})->where('any', '.*');  // Позволяет Vue управлять маршрутизацией
+Route::get('/', function () {
+    return view('app');  // Шаблон с Vue
+})->where('any', '.*');  // Позволяет Vue управлять маршрутизацией
 
 
 

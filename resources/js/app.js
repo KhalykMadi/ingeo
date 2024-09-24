@@ -21,6 +21,7 @@ Vue.component('Modal', require('./components/Modal.vue').default);
 Vue.component('Payment', require('./components/Payment.vue').default);
 Vue.component('vue-easy-lightbox', VueEasyLightbox);
 
+Vue.component('map-component', require('./components/MapComponent.vue').default);
 Vue.component('FilterPage', require('./components/Filter.vue').default);
 Vue.component('SearchResult', require('./components/SearchResult.vue').default);
 Vue.component('Accordion', require('./components/Accordion.vue').default);

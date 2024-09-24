@@ -3,7 +3,8 @@
         <main>
             <Sidebar />
             <Info v-if="showInfo" />
-            <Payment v-if="showPayment" />
+            <map-component></map-component>
+<!--            <Payment v-if="showPayment" />-->
         </main>
     </div>
 </template>
