@@ -265,5 +265,78 @@
     }
 }
 
+.auth {
+    &-page {
+        // display: flex;
+        // align-items: center;
+        // justify-content: center;
+        // height: 100vh;
+
+        .card {
+            width: 400px;
+            margin-top: 11rem;
+            margin-left: auto;
+            margin-right: auto;
+            box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+            padding: 2rem;
+            border-radius: 0.5rem;
+
+            .title {
+                font-size: 2rem;
+                font-weight: 700;
+                color: var(--black);
+            }
+            .description {
+                font-size: 0.875rem;
+                color: var(--black);
+                margin-top: 0.5rem;
+
+                a {
+                    color: var(--primary);
+                    text-decoration: none;
+                }
+            }
+            .form {
+                margin-top: 1.5rem;
+                &-group {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 0.25rem;
+
+                    + .form-group {
+                        margin-top: 1rem;
+                    }
+
+                    input {
+                        border: 1px solid #d5d5d5;
+                        border-radius: 0.25rem;
+                        font-size: 1rem;
+                        padding: 0.5rem;
+                        color: var(--black);
+                        outline: none;
+                    }
+                    label {
+                        font-size: 0.875rem;
+                        font-weight: 400;
+                        color: var(--black);
+                    }
+                }
+                .button {
+                    margin-top: 1.5rem;
+                    width: -webkit-fill-available;
+                }
+            }
+        }
+    }
+}
+
+.error-message {
+    color: red;
+    margin-top: 10px;
+    background-color: #ffecec;
+    border-radius: 0.5rem;
+    padding: 1rem;
+}
+
 @import './block/footer';
 @import './block/media';

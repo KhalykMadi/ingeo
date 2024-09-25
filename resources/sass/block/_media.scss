@@ -84,4 +84,13 @@
         width: 100%;
         margin: 1rem;
     }
+    .auth {
+        &-page {
+            .card {
+                width: -webkit-fill-available;
+                margin-left: 1rem;
+                margin-right: 1rem;
+            }
+        }
+    }
 }
